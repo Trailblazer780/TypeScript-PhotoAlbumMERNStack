@@ -1,0 +1,38 @@
+@import "./_globals";
+
+.header-text{
+    color: $header-font-color;
+    text-align: center;
+}
+
+.btn-group button {
+    background-color:  #555555; 
+    border: 1px solid  #555555;;
+    color: $header-font-color; 
+    padding: 10px 24px; 
+    cursor: pointer;
+    float: left; 
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; 
+  }
+  
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .btn-group button:hover {
+    background-color: white;
+  }
+
+  .button:hover {
+    background-color: white;
+    color: white;
+  }
+
+  .btn-group {
+    padding-bottom: 10px;
+  }
