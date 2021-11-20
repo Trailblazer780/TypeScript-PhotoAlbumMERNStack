@@ -57,7 +57,7 @@ app.post("/addcomment", async(request, response) => {
 
         // let update = { $push: { "comments": request.body } };
 
-        let update = { $push: {"comments": {$each: [{"author":request.body.author, "comment":request.body.comment}]}}};
+        let update = { $push: {"comments": {$each: [{"author":request.body.author, "comment":request.body.comment}], $position: 0 }} };
         // get reference to database via name
         let db = mongoClient.db(DB_NAME);
         let result = await db.collection("photos").updateOne(selector, update);
