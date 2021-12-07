@@ -1,25 +1,17 @@
-# Boilerplate for PROG3017 Full Stack Programming with Express Server and MongoDB
+# PROG 3017 (Full Stack Programming) Project 1
+## Photo Album React JS
 
-This project folder contains the React client side and the Express Server side with MondoDB
+This program is written in TypeScript using the React framework. The Server Side that is being used is Node.js and Express.js and the
+database that is being used is Mongo DB.
 
-## Available Scripts
+How to use:
 
-In the project directory, you can run:
+To use this program you must have docker installed on your computer.
+1. Have docker started and running.
+2. Open the project folder in VSCode.
+3. Run this command in the terminal: `docker compose up --build`
+4. Open your web browser and hit the web app at `https://localhost:3000`
 
-### `docker compose build`
+Below is a screenshot of the application in use:
 
-To build the docker container images
-
-### `docker compose up`
-
-Spins up the container that runs the local server (React web app)
-Spins up the container that runs the Express server (running on Node.js)
-Spins up the container that runs the MongoDB server
-
-### `docker compose -f docker-compose-prod.yml build`
-Builds docker container images for production build
-
-### `docker compose -f docker-compose-prod.yml up`
-
-Spins up the container that runs the Express server (running on Node.js) that handles the API requests as well as serves the client side's index.html
-Spins up the container that runs the MongoDB server
+![alt text](https://github.com/Trailblazer780/Photo-Album-React/blob/master/Images/Example1.PNG)
